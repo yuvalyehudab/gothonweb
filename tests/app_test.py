@@ -8,5 +8,5 @@ def test_index():
     rv = web.get('/', follow_redirects=True)
     assert rv.status_code == 404
 
-    rv = web.get('/hello', follow_redirect=True)
+    rv = web.get('/hello', follow_redirects=True)
     assert rv.status_code == 200
